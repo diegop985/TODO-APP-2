@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  justify-content: left;
+  width: 800px;
+  margin-left: 100px;
+  margin-top: 40px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+p {
+  padding-right: 20px;
+}

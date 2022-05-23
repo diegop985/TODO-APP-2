@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import './input.css'
 
-
-export const InputToDo = ({ setTodoValue }) => {
+export const InputToDo = ({ todoValue, setTodoValue }) => {
 
     const [queryValue, setQueryValue] = useState("")
 
@@ -13,14 +13,16 @@ export const InputToDo = ({ setTodoValue }) => {
     const handleChange = (e) => {
 
         e.preventDefault()
-
+        
         if(queryValue.trim().length > 0) {
             setTodoValue( todoValue => [...todoValue, queryValue]  )
             setQueryValue("")
             
         }
-
+        
     }
+    
+
 
     return (
 
